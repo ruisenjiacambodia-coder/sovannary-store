@@ -24,14 +24,14 @@ jobs:
           chmod +x sovannary
 
       - name: Deploy to Railway
-        if: env.RAILWAY_TOKEN != ''
+        if: env.RAILWAY_TOKEN != '1d74f0ef-1f4c-4c0e-91f0-725988953928'
         uses: bervProject/railway-deploy@main
         with:
           railway_token: ${{ secrets.RAILWAY_TOKEN }}
           service: sovannary-store
 
       - name: Deploy to Render
-        if: env.RENDER_API_KEY != ''
+        if: env.RENDER_API_KEY != 'vck_7BG6Gy5NFFfEE1zZo8YgVsT4bDX1DP4svnRMbdfQzLshaghLTV32Uokr'
         run: |
           curl -X POST https://api.render.com/v1/services/${{ secrets.RENDER_SERVICE_ID }}/deploys \
             -H "Authorization: Bearer ${{ secrets.RENDER_API_KEY }}" \
