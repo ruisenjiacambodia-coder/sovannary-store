@@ -194,8 +194,10 @@ func handleListProducts(w http.ResponseWriter, r *http.Request) {
 	products := make([]Product, 0, len(store.products))
 	for _, p := range store.products {
 		products = append(products, p)
-	}	writeJSON(w, http.StatusOK, products)
+	}
+	writeJSON(w, http.StatusOK, products)
 }
+
 
 // GET /api/products/{id}
 func handleGetProduct(w http.ResponseWriter, r *http.Request, id string) {
@@ -243,7 +245,8 @@ func handleUpdateProduct(w http.ResponseWriter, r *http.Request, id string) {
 
 	existing, ok := store.products[id]
 	if !ok {
-		writeError(w, http.StatusNotFound, "Product not found")		return
+		writeError(w, http.StatusNotFound, "Product not found")
+		return
 	}
 
 	// Preserve ID and CreatedAt
