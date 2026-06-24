@@ -1,0 +1,44 @@
+{
+  "name": "Sovannary Store",
+  "short_name": "Sovannary",
+  "description": "Digital Menu & Inventory - ហាងលក់គ្រឿងប្រណីត",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#09090b",
+  "theme_color": "#09090b",
+  "lang": "km",
+  "categories": ["shopping", "business", "productivity"],
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><rect fill='%2309090b' width='512' height='512' rx='96'/><text x='50%25' y='55%25' text-anchor='middle' font-size='320'>🛍️</text></svg>",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect fill='%2309090b' width='192' height='192' rx='32'/><text x='50%25' y='55%25' text-anchor='middle' font-size='120'>🛍️</text></svg>",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "ហាង (Store)",
+      "short_name": "Store",
+      "description": "មើលផលិតផលទាំងអស់",
+      "url": "/?tab=store",
+      "icons": [{ "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 96'><rect fill='%23f0b429' width='96' height='96' rx='16'/><text x='50%25' y='60%25' text-anchor='middle' font-size='48'>🏪</text></svg>", "sizes": "96x96" }]
+    },
+    {
+      "name": "គ្រប់គ្រង (Admin)",
+      "short_name": "Admin",
+      "description": "គ្រប់គ្រងស្តុក",
+      "url": "/?tab=admin",
+      "icons": [{ "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 96'><rect fill='%23f0b429' width='96' height='96' rx='16'/><text x='50%25' y='60%25' text-anchor='middle' font-size='48'>⚙️</text></svg>", "sizes": "96x96" }]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: sovannary-store
+    runtime: go
+    buildCommand: go build -o sovannary main.go
+    startCommand: ./sovannary
+    envVars:
+      - key: PORT
+        value: 8080
+    healthCheckPath: /
